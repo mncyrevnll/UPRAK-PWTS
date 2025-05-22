@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jam Aesthetic</title>
+    <link rel="stylesheet" href="jam.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Mode Switcher -->
+        <div class="mode-switch">
+            <button id="modeClock" class="active">Jam</button>
+            <button id="modePomodoro">Pomodoro</button>
+            <button id="modeStopwatch">Stopwatch</button>
+        </div>
+
+        <!-- Jam Digital -->
+        <div id="clock" class="mode-section">
+            <h2>Sekarang Pukul</h2>
+            <div id="time">
+                <div><span id="hour">00</span><span>Hours</span></div>
+                <div><span id="minutes">00</span><span>Minutes</span></div>
+                <div><span id="second">00</span><span>Seconds</span></div>
+                <div><span id="ampm"></span></div>
+            </div>
+        </div>
+
+        <!-- Pomodoro Timer -->
+        <div id="pomodoro" class="mode-section hidden">
+            <h2>Pomodoro Timer</h2>
+            <div id="pomoDisplay">25:00</div>
+            <div class="pomo-controls">
+                <button id="startPomo">Start</button>
+                <button id="resetPomo">Reset</button>
+            </div>
+        </div>
+
+        <!-- Stopwatch -->
+        <div id="stopwatch" class="mode-section hidden">
+            <h2>Stopwatch</h2>
+            <div id="stopwatchDisplay">00:00:00</div>
+            <div class="stopwatch-controls">
+                <button id="startStopwatch">Start</button>
+                <button id="stopStopwatch">Stop</button>
+                <button id="resetStopwatch">Reset</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="jam.js"></script>
+</body>
+</html>
